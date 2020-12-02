@@ -30,7 +30,7 @@ def QueryStage() {
         def filename = 'orders.yaml'
         def data = readYaml file: filename
         data.task.each{ 
-            println data.task.prev
+            println data.task
         }                
     }
 }
