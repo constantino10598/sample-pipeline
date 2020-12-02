@@ -29,8 +29,8 @@ def QueryStage() {
     stage('Order Query') { 
         def filename = 'orders.yaml'
         def content = readYaml file: filename
-        for (ai in content){ 
-            println ai.task
+        for (task in content){ 
+            println task.prev
         }      
     }
 }
