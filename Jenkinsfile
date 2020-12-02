@@ -1,14 +1,7 @@
-properties([
-    
-])
-
-def runJMX = "${params.runJMX}".toBoolean()
-//lock(params.environment) {
-node('any') {
+node('master') {
     SCMStage()
     QueryStage()
 }
-//}
 
 def exec_script(script) {
     isUnix() ? sh(script) : bat(script)
