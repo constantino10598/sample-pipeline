@@ -1,5 +1,5 @@
 task:
-    PerformBilling: prev:1, actual:123, required:2 
-    UpdateWorkOrder: prev:1, actual:123, required:2 
-    CompleteOrderCancellation: prev:1, actual:123, required:2 
-    CreateWorkOrder: prev:1, actual:123, required:2 
+    - PerformBilling: prev:1, actual:123, required:2 
+    - UpdateWorkOrder: prev:1, actual:123, required:2 
+    - CompleteOrderCancellation: prev:1, actual:123, required:2 
+    - CreateWorkOrder: prev:1, actual:123, required:2 
