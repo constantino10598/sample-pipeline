@@ -1,15 +1,15 @@
 data:
-  task: 
+  - task: 
     name: PerformBilling1
     prev: 1
     actual: 123 
     required: 2 
-  task: 
+  - task: 
     name: PerformBilling2
     prev: 2
     actual: 123 
     required: 2 
-  task: 
+  - task: 
     name: PerformBilling3
     prev: 3
     actual: 123 
