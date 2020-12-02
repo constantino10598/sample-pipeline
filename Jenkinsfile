@@ -30,7 +30,7 @@ def QueryStage() {
         def filename = 'orders.yaml'
         def content = readYaml file: filename
         for (task in content.data){ 
-            println task + " : " + task.prev
+            println task + ' : ' + task.prev
         }      
     }
 }
