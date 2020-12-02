@@ -29,10 +29,8 @@ def QueryStage() {
     stage('Order Query') { 
         def filename = 'orders.yaml'
         def data = readYaml file: filename
-        data.task.each{ entry ->
-            entry.each { entries ->
-                echo entries.value
-            }
+        data.task.each{ 
+            echo data.task.prev
         }                
     }
 }
