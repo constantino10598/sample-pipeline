@@ -1,13 +1,13 @@
 data:
   - task: PerformBilling1
     prev: 1
-    actual: 3 
-    required: 2 
-  - task: PerformBilling2
-    prev: 2
     actual: 2 
-    required: 2 
+    required: 3 
+  - task: PerformBilling2
+    prev: 1
+    actual: 2 
+    required: 3 
   - task: PerformBilling3
-    prev: 3
-    actual: 1 
-    required: 2 
+    prev: 1
+    actual: 2 
+    required: 3 
