@@ -29,7 +29,7 @@ def QueryStage() {
     stage('Order Query') { 
         def filename = 'orders.yaml'
         def content = readYaml file: filename
-        for (ai in content.data){ 
+        for (ai in content){ 
             println ai
         }      
     }
