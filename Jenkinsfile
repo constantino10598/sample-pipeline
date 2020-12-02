@@ -28,8 +28,10 @@ def SCMStage() {
 def QueryStage() {
     stage('Order Query') { 
         def filename = 'orders.yaml'
-        def data = readYaml file: filename
-        println data.data.task.name            
+        def content = readYaml file: filename
+        content.data.task.each{
+            println name
+        }      
     }
 }
 
