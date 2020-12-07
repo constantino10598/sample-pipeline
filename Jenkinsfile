@@ -33,7 +33,7 @@ def QueryStage() {
             writeFile(file: newFile, encoding: "UTF-8", text: readFile(file: sourceFile, encoding: "UTF-8"))
         }
 
-        def content = readYaml file: filename
+        def content = readYaml file: sourceFile
         for (task in content.data){ 
             task.actual = task.prev
         }      
