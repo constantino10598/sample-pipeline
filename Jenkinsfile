@@ -28,8 +28,10 @@ def SCMStage() {
 def QueryStage() {
     stage('Order Query') { 
         def filename = 'orders.yaml'
-        def file = new File(filename)
-        file.renameTo('orders-old.yaml')
+        File oldFile = new File("orders.yaml");
+        File newFile = new File("orders-prev.yaml");
+        boolean success = oldFile.renameTo(newFile);
+        echo 'test: ' success
         def content = readYaml file: filename
         for (task in content.data){ 
             task.actual = task.prev
