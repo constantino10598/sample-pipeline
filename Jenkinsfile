@@ -30,6 +30,7 @@ def QueryStage() {
         def sourceFile = "orders.yaml"
         if (fileExists(file: sourceFile)) {
             def newFile = "order-prev.yaml"
+            echo 'testing.........'
             writeFile(file: newFile, encoding: "UTF-8", text: readFile(file: sourceFile, encoding: "UTF-8"))
         }
 
