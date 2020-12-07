@@ -35,7 +35,7 @@ def QueryStage() {
 
         def content = readYaml file: sourceFile
         for (task in content.data){ 
-            echo task.actual
+            println task.actual
         }      
     }
 }
